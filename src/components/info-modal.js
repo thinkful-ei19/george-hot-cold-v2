@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './info-modal.css';
 
 export default function InfoModal(props) {
@@ -15,7 +14,7 @@ export default function InfoModal(props) {
                         <li>3. You will <strong>get feedback</strong> on how close ("hot") or far ("cold") your guess is.</li>
                     </ul>
                     <p>So, Are you ready?</p>
-                    <a className="close" href="#">Got It!</a>
+                    <a onClick={props.onClickHandle}  className="close" href="#">Got It!</a>
                 </div>
             </div>
         </div>
